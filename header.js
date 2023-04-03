@@ -1,16 +1,6 @@
-const headerTemplate = document.createElement('template');
+// const headerTemplate = document.createElement('template');
 
-headerTemplate.innerHTML = `
-  <link rel="stylesheet" type="text/css" href="header.css">
-  <header>
-    <nav>
-      <ul>
-        <li><a href="CV.html">About</a></li>
-        <li><a href="Reviews.html">Work</a></li>
-      </ul>
-    </nav>
-  </header>
-`;
+// headerTemplate
 
 class Header extends HTMLElement {
   constructor() {
@@ -18,7 +8,18 @@ class Header extends HTMLElement {
   }
 
   connectedCallback() {
-    
+    this.innerHTML = `
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="Reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+  `;
   }
 }
 

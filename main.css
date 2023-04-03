@@ -1,24 +1,44 @@
-nav {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:  #0a0a23;
+
+  /* CV content */
+  main.cv li {
+    list-style: decimal;
   }
 
-  ul {
-    padding: 0;
-  }
-  
-  ul li {
-    list-style: none;
-    display: inline;
+  main.cv {
+    margin: 3%;
   }
 
+  main.cv table {
+    font-size: large;
+  }
+
+  table.vertical { 
+    border-collapse: collapse; 
+  }
+  table.vertical tr { 
+    border: none; 
+  }
+  table.vertical td {
+    border-right: solid 1px; 
+    border-left: solid 1px;
+    /* margin: 10px; */
+ }
+
+ /* Homepage */
   main.homepage {
     display: flex;
     align-items: center;
     justify-content: center
+  }
+
+  figure.headshot {
+    /* float: left;
+    margin: 10px;
+    margin-right: 40px; */
+    min-width: 40%;
+    /* flex-basis: 40%; */
+    /* width: auto; */
+    /* order: 2; */
   }
 
   /* .homepage {
@@ -32,18 +52,13 @@ nav {
     text-align: center; */
   /* } */
 
-  /* figure.headshot { */
-    /* float: left;
-    margin: 10px;
-    margin-right: 40px; */
-    /* max-width: 50%;
-    flex-basis: 40%;
-    width: auto; */
-    /* order: 2; */
-  /* } */
-
   span.homepage {
-    margin-right: 50px;
+    margin-right: 1%;
+  }
+
+  /* Navigation bar */
+  nav a {
+    color: #fff;
   }
   
   a {
@@ -51,11 +66,12 @@ nav {
     margin: 0 5px;
     /* color: #fff; */
     text-decoration: none;
+    /* color: #fff; */
   }
 
   p {
     /* display: flex; */
-    margin: 40px;
+    margin: 1%;
     /* align-items: center; */
     font-size: x-large;
     text-align: justify;
@@ -65,5 +81,28 @@ nav {
   
   a:hover {
     padding-bottom: 5px;
-    box-shadow: inset 0 -2px 0 0 #fff;
+    box-shadow: inset 0 -2px 0 0 #4ece2b;
+    color: #4ece2b;
   }
+
+  h1.note {
+    text-align: center;
+  }
+
+  nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #0a0a23;
+  }
+
+  ul {
+    padding: 0;
+  }
+  
+  nav li {
+    list-style: none;
+    display: inline;
+  }
+
