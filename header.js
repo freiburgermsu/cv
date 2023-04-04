@@ -13,9 +13,9 @@ class Header extends HTMLElement {
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="CV.html">CV</a></li>
-          <li><a href="Reviews.html">Reviews</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../CV.html">CV</a></li>
+          <li><a href="../Reviews.html">Reviews</a></li>
         </ul>
       </nav>
     </header>
