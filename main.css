@@ -4,11 +4,15 @@
     list-style: decimal;
   }
 
-  main.cv {
+  h1.header {
+    text-align: center;
+  }
+
+  main.cv, main.publications, main.conferences {
     margin: 3%;
   }
 
-  main.cv table {
+  main.cv table, main.publications, main.conferences {
     font-size: large;
   }
 
@@ -23,6 +27,7 @@
     border-left: solid 1px;
     /* margin: 10px; */
  }
+
 
  /* Homepage */
   main.homepage {
@@ -55,6 +60,7 @@
   span.homepage {
     margin-right: 1%;
   }
+
 
   /* Navigation bar */
   nav a {
