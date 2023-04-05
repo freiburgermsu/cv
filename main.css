@@ -8,7 +8,7 @@
     text-align: center;
   }
 
-  main.cv, main.publications, main.conferences {
+  main.cv, main.publications, main.conferences, main.review {
     margin: 3%;
   }
 
@@ -26,6 +26,10 @@
     border-right: solid 1px; 
     border-left: solid 1px;
     /* margin: 10px; */
+ }
+
+ ol.references li {
+  font-size: large;
  }
 
 
