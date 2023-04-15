@@ -105,6 +105,15 @@
     font-size: x-large;
     text-align: justify;
   }
+
+  blockquote {
+    margin: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: x-large;
+    text-align: justify;
+
+  }
   
   a:hover {
     padding-bottom: 5px;
