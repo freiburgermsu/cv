@@ -6,7 +6,7 @@
     <body>
         <header-component></header-component>
         <main class="review">
-            <h1>Carotenoids and Cancer</h1>
+            <h1 class="header">Carotenoids and Cancer</h1>
 
             <h2>Introduction</h2>
             <p>
@@ -64,47 +64,59 @@
                 The implicit public health epidemic of suffering from dietary diseases has an obvious solution: eat more colorful vegetables!
             </p>
 
-            <p><strong>Table 1</strong>: Carotenoids and food examples categorically arranged along two axes: provitamin A, and carotene vs. xanthophyll. The vitamin A potencies of provitamin A carotenoids are provided in parentheses relative to pure vitamin A (retinol).</p>
-            <table style="height: 528px;" width="1867">
+            <p class="table_header">
+                <strong>Table 1</strong>: Carotenoids and food examples categorically arranged along two axes: provitamin A, and carotene vs. xanthophyll. <br> 
+                The vitamin A potencies of provitamin A carotenoids are provided in parentheses relative to pure vitamin A (retinol).
+            </p>
+            <table>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><b>Vitamin-A status</b></td>
+                        <td colspan="2"><strong>Carotene</strong></td>
+                        <td colspan="2"><strong>Xanthophyll</strong></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><strong>Carotene</strong></td>
-                        <td><strong>Xanthophyll</strong></td>
+                        <td><b>Chemical</b></td>
+                        <td><b>Sources</b></td>
+                        <td><b>Chemical</b></td>
+                        <td><b>Sources</b></td>
                     </tr>
                     <tr>
-                        <td><strong>provitamin-A</strong> <sup>7</sup></td>
-                        <td>
-                            <em>Alpha-carotene</em> (~4%) <strong>Sources:</strong> carrots<br>
-                            <em>Beta-carotene</em> (~8%)<sup>8</sup> <strong>Sources</strong>: apricots, carrots, sweet potatoes, spinach, broccoli, and butternut squash<sup>41</sup><br>
-                            <em>Gamma-carotene</em> (~4%) <strong>Source</strong>: corn, yellow bell peppers, figs, and papaya
-                        </td>
-                        <td><em>Cryptoxanthins</em> (~4%) <strong>Sources:</strong> tangerines and papayas</td>
+                        <td rowspan="2"><strong>Yes</strong> <sup>7</sup></td>
+                        <td><em>Alpha-carotene</em> (~4%)</td>
+                        <td>Carrots</td>
+                        <td rowspan="2"><em>Cryptoxanthins</em> (~4%)</td>
+                        <td rowspan="2">Tangerines and papayas</td>
                     </tr>
                     <tr>
-                        <td><strong>non-provitamin-A</strong></td>
-                        <td><em>Lycopene</em> <strong>Sources:</strong> tomatoes</td>
-                        <td>
-                            <em>Lutein + Zeaxanthin</em> <strong>Sources:</strong> broccoli, spinach, kale, collard greens, arugula, green peas, fennel/anise, and yellow egg yolks.<br>
-                            <em>Astaxanthin</em> <strong>Sources</strong>: algae, salmon skin
-                        </td>
+                        <td><em>Beta-carotene</em> (~8%)<sup>8</sup></td>
+                        <td>Apricots, carrots, sweet potatoes, <br> spinach, broccoli, and butternut squash<sup>41</sup></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>No</strong></td>
+                        <td><em>Lycopene</em></td>
+                        <td>Tomatoes</td>
+                        <td><em>Lutein + Zeaxanthin</em></td>
+                        <td>Broccoli, spinach, kale, collard greens, <br> arugula, green peas, fennel/anise, and yellow egg yolks.</td>
+                    </tr>
+                    <tr>
+                        <td><em>Gamma-carotene</em> (~4%)</td>
+                        <td>Corn, yellow bell peppers, figs, and papaya</td>
+                        <td><em>Astaxanthin</em></td>
+                        <td>Algae, salmon skin</td>
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Table 2</strong>: Cancer reduction rates of people with the greatest carotenoid consumption/retention relative to people with the lowest carotenoid consumption/retention. 
+            <p class="table_header">
+                <strong>Table 2</strong>: Cancer reduction rates of people with the greatest carotenoid consumption/retention relative to people with the lowest carotenoid consumption/retention. <br>
                 Entries without data are denoted with "--", which not significant data is denoted "NS".
             </p>
 
             <table>
                 <thead>
                   <tr>
-                    <th>Carotenes</th>
+                    <th>Chemical</th>
                     <th>Breast cancer</th>
                     <th>Lung cancer</th>
                     <th>Colorectal cancer</th>
@@ -112,6 +124,7 @@
                   </tr>
                 </thead>
                 <tbody>
+                    <tr><td colspan="5"><b>Carotenes</b></td></tr>
                   <tr>
                     <td>Alpha-carotene</td>
                     <td>26%[24]</td>
@@ -134,11 +147,7 @@
                     <td>17-73% with chemotherapy[31]</td>
                   </tr>
                   <tr>
-                    <td>Xanthophylls</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td>--</td>
+                    <td colspan="5"><b>Xanthophylls</b></td>
                   </tr>
                   <tr>
                     <td>Lutein</td>
@@ -172,7 +181,7 @@
             </table>
 
             <h2>References</h2>
-            <ol>
+            <ol class="references">
                 <li>Rodríguez-Bernaldo de Quirós, A. &amp; Costa, H. S. Analysis of carotenoids in vegetable and plasma samples: A review. <em>J. Food Compos. Anal.</em> <strong>19</strong>, 97-111 (2006).</li>
                 <li>Dagatti, M. S. <em>et al.</em> Protective effect of macro and micro nutrients on male lung cancer. A case-control study in Rosario, Argentina. <em>e-SPEN</em> <strong>4</strong>, (2009).</li>
                 <li>Yabuzaki, J. Carotenoids Database: Structures, chemical fingerprints and distribution among organisms. <em>Database</em> <strong>2017</strong>, 1-11 (2017).</li>
