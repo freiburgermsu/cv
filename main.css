@@ -146,3 +146,66 @@
     padding: 0;
   }
 
+  /* .publications ol li {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    column-gap: 20px;
+    align-items: start;
+  }
+  
+
+  .publications ol li .paper {
+    grid-column: 1;
+  }
+  
+
+  .publications ol li::after {
+    content: attr(citation-count);
+    grid-column: 2;
+    justify-self: end;
+    font-weight: bold;
+    color: #333;
+    border-left: 1px solid #eee;
+    padding-left: 10px;
+  } */
+
+  .publications ol li {
+    position: relative;      
+    padding-right: 100px;     
+    margin-bottom: 1em;   
+  }
+  
+  .publications ol li::after {
+    content: attr(citation-count);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #eee;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .publications h2#peer-reviewed {
+    position: relative;    /* create a positioning context */
+    padding-right: 80px;   /* same width you used on the li’s */
+    margin-bottom: 1em;    /* match your spacing */
+  }
+  
+  /* 2. Float “Citations” into that gutter */
+  .publications h2#peer-reviewed::after {
+    content: "Citations";
+    position: absolute;
+    top: 0;                /* align to the top of the H2 */
+    right: 0;              /* flush to the right edge */
+    width: 60px;           /* same inner width as your li’s ::after */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #eee;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+  }
