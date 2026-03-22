@@ -8,23 +8,58 @@
     text-align: center;
   }
 
-  main.cv, main.publications, main.conferences, main.review {
+  main.cv {
+    margin: 2% 6%;
+  }
+
+  main.publications, main.conferences, main.review {
     margin: 3%;
   }
 
-  main.cv table, main.publications, main.conferences {
+  main.cv table {
+    width: 100%;
     font-size: large;
   }
 
-  table.vertical { 
-    border-collapse: collapse; 
+  table.cv-detail {
+    width: 100%;
+    border-collapse: collapse;
   }
-  table.vertical tr { 
-    border: none; 
+  table.cv-detail td {
+    padding: 6px 12px;
+    vertical-align: top;
+  }
+  table.cv-detail td:last-child {
+    text-align: right;
+    white-space: nowrap;
+    width: 1%;
+  }
+
+  .dissemination-links {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main.publications, main.conferences {
+    font-size: large;
+  }
+
+  table.vertical {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table.vertical tr {
+    border: none;
   }
   table.vertical td {
-    border-right: solid 1px; 
-    border-left: solid 1px;
+    padding: 6px 12px;
+  }
+  table.vertical td:last-child {
+    text-align: right;
+    white-space: nowrap;
+    width: 1%;
   }
   ol.references li {
     font-size: large;
@@ -85,7 +120,7 @@
     min-width: 40%;
   }
 
-  span.homepage {
+  div.homepage {
     margin-right: 1%;
   }
 
@@ -169,10 +204,22 @@
     padding-left: 10px;
   } */
 
+  .publications ol li.year-heading,
+  .publications ol li.section-heading {
+    list-style: none;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .publications ol li.year-heading::after,
+  .publications ol li.section-heading::after {
+    content: none;
+  }
+
   .publications ol li {
-    position: relative;      
-    padding-right: 100px;     
-    margin-bottom: 1em;   
+    position: relative;
+    padding-right: 100px;
+    margin-bottom: 1em;
   }
   
   .publications ol li::after {
