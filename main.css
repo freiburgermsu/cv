@@ -1,7 +1,7 @@
 
   /* CV content */
   main.cv li {
-    list-style: decimal;
+    list-style: disc;
   }
 
   .header {
@@ -10,6 +10,53 @@
 
   main.cv {
     margin: 2% 6%;
+  }
+
+  main.cv-columns {
+    columns: 2;
+    column-gap: 3em;
+  }
+
+  main.cv-columns > .cv-full {
+    column-span: all;
+  }
+
+  main.cv-columns > hr {
+    column-span: all;
+  }
+
+  main.cv-columns > h1 {
+    column-span: all;
+  }
+
+  main.cv-columns > .dissemination-links {
+    column-span: all;
+  }
+
+  .cv-entry {
+    break-inside: avoid;
+    margin-bottom: 1em;
+    font-size: large;
+  }
+
+  .cv-meta {
+    margin-bottom: 0.25em;
+  }
+
+  .subsection {
+    break-inside: avoid;
+    margin-bottom: 0.5em;
+  }
+
+  .cv-item {
+    padding: 4px 0;
+    font-size: large;
+  }
+
+  @media (max-width: 768px) {
+    main.cv-columns {
+      columns: 1;
+    }
   }
 
   main.publications, main.conferences, main.review {
