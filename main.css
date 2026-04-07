@@ -13,24 +13,17 @@
   }
 
   main.cv-columns {
-    columns: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 3em;
+    align-items: start;
   }
 
-  main.cv-columns > .cv-full {
-    column-span: all;
-  }
-
-  main.cv-columns > hr {
-    column-span: all;
-  }
-
-  main.cv-columns > h1 {
-    column-span: all;
-  }
-
+  main.cv-columns > .cv-full,
+  main.cv-columns > hr,
+  main.cv-columns > h1,
   main.cv-columns > .dissemination-links {
-    column-span: all;
+    grid-column: 1 / -1;
   }
 
   .cv-entry {
@@ -55,7 +48,7 @@
 
   @media (max-width: 768px) {
     main.cv-columns {
-      columns: 1;
+      grid-template-columns: 1fr;
     }
   }
 
