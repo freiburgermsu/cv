@@ -1,2 +1,9 @@
 # The CIVE 510 course
 CIVE 510 - Industrial ecology/
+
+# macOS metadata
+.DS_Store
+._*
+
+# LibreOffice lock files
+.~lock.*#
