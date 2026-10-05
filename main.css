@@ -296,3 +296,103 @@
     font-weight: bold;
     color: #333;
   }
+
+ /* Python packages */
+  .packages div.pkg-meta {
+    margin-bottom: 0.5em;
+    font-size: medium;
+    color: #52514e;
+  }
+
+  .packages h3 {
+    margin-bottom: 0.25em;
+  }
+
+  table.downloads {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .packages p.source {
+    font-size: medium;
+    color: #52514e;
+  }
+
+  table.downloads caption {
+    caption-side: bottom;
+    padding-top: 8px;
+    font-size: medium;
+    color: #52514e;
+    text-align: left;
+  }
+
+  table.downloads th, table.downloads td {
+    padding: 6px 12px;
+  }
+
+  table.downloads thead th {
+    font-size: medium;
+    font-weight: 400;
+    color: #52514e;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  table.downloads tbody th, table.downloads tfoot th {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  table.downloads .num {
+    text-align: right;
+    white-space: nowrap;
+    width: 1%;
+    font-variant-numeric: tabular-nums;
+  }
+
+  table.downloads tfoot th, table.downloads tfoot td {
+    border-top: 1px solid #ddd;
+    font-weight: 700;
+  }
+
+  table.downloads td.bar-cell {
+    width: 50%;
+  }
+
+  /* Single-series magnitude bars: one hue, zero baseline, 4px rounded data-end */
+  span.bar-track {
+    display: block;
+    height: 14px;
+    background-color: #f2f2f2;
+  }
+
+  span.bar {
+    display: block;
+    height: 14px;
+    border-radius: 0 4px 4px 0;
+    background-color: #2a78d6;
+  }
+
+  @media (max-width: 768px) {
+    table.downloads .bar-head, table.downloads td.bar-cell {
+      display: none;
+    }
+
+    table.downloads {
+      font-size: medium;
+    }
+
+    table.downloads th, table.downloads td {
+      padding: 6px 4px;
+    }
+
+    /* let the long names and column heads wrap rather than overflow the screen */
+    table.downloads tbody th, table.downloads tfoot th,
+    table.downloads thead th.num {
+      white-space: normal;
+    }
+
+    table.downloads tbody th a {
+      margin: 0;
+    }
+  }
